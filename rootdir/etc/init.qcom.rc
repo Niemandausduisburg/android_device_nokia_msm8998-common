@@ -599,6 +599,7 @@ service dhcpcd_wigig0 /system/bin/dhcpcd -ABKLG
     disabled
     oneshot
 
+<<<<<<< HEAD
 service iprenew_wlan0 /system/bin/dhcpcd -n
     class late_start
     disabled
@@ -608,6 +609,12 @@ service iprenew_bond0 /system/bin/dhcpcd -n
     class late_start
     disabled
     oneshot
+=======
+service vendor.adsprpcd /vendor/bin/adsprpcd
+    class main
+    user media
+    group media
+>>>>>>> d52e5f4d (pro1: Add vendor prefix to thermal-engine)
 
 service iprenew_p2p /system/bin/dhcpcd -n
     class late_start
