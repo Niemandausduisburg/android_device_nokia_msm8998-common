@@ -25,7 +25,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay \
-    $(COMMON_PATH)/overlay-lineage
+    $(COMMON_PATH)/overlay-hentai
 
 # Permissions
 PRODUCT_COPY_FILES += \
