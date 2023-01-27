@@ -49,7 +49,7 @@
      <integer translatable="false" name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-100</integer>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade -->
-    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
+    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">true</bool>
 
     <!-- Indicate the driver support NL80211_REG_CHANGED event. -->
     <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
