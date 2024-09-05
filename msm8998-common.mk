@@ -418,6 +418,7 @@ PRODUCT_PACKAGES += \
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
+    hardware/nokia \
     hardware/google/pixel \
     hardware/google/interfaces \
     hardware/lineage/interfaces/power-libperfmgr \
