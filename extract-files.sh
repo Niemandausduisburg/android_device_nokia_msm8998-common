@@ -81,6 +81,9 @@ function blob_fixup() {
         *)
             return 1
             ;;
+        vendor/lib/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            ;;
     esac
     return 0
 }
