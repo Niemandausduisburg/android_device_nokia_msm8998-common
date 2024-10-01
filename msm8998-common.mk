@@ -315,7 +315,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 # Permissions (FIH)
-ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
+ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/perms/com.evenwell.datacollect.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.evenwell.datacollect.xml \
     $(COMMON_PATH)/configs/perms/com.fihtdc.datacollect.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.fihtdc.datacollect.xml \
@@ -386,7 +386,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Ramdisk (fstab)
-ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
+ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
 PRODUCT_PACKAGES += \
     fstab.qcom
 endif

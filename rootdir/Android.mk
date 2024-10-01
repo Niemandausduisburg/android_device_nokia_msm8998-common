@@ -1,6 +1,6 @@
 LOCAL_PATH:= $(call my-dir)
 
-ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
+ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
 include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.qcom
 LOCAL_MODULE_TAGS  := optional
