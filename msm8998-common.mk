@@ -337,6 +337,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.qcom
 endif
 
+# Remove unneeded apckages
+PRODUCT_PACKAGES += \
+    RemovePackagesNokia
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
