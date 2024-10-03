@@ -395,6 +395,10 @@ endif
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/etc/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
+# Remove unneeded apckages
+PRODUCT_PACKAGES += \
+    RemovePackages
+    
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
