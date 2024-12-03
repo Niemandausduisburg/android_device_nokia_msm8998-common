@@ -1,2 +1,5 @@
 allow platform_app sysfs_kgsl:dir search;
 allow platform_app system_prop:property_service set;
+
+# Ignore lookup for vendor.google.wireless_charger::IWirelessCharger
+dontaudit platform_app default_android_hwservice:hwservice_manager find;
