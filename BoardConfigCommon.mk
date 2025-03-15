@@ -78,7 +78,7 @@ BOARD_USES_ADRENO := true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # DT2W
-ifeq ($(filter DDV SLD,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
+ifeq ($(filter DDV SLD,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
 TARGET_TAP_TO_WAKE_NODE := "/proc/AllHWList/tp_double_tap"
 else
 TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/wakeup_gesture_enable"
@@ -95,7 +95,7 @@ TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/derp/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
@@ -126,7 +126,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
-ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
+ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.qcom
 endif
 
@@ -135,13 +135,13 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
 
 # Sepolicy
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/derp/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 
 # Treble
-ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^lineage_//')),)
+ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
 BOARD_VENDORIMAGE_PARTITION_TYPE := ext4
 endif
 TARGET_COPY_OUT_VENDOR := vendor
