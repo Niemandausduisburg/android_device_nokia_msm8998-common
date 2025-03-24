@@ -7,6 +7,7 @@ This is the Android device configuration for Nokia MSM8998 and SDM660 platform.
 | Device                   | Codename |
 | ------------------------:|:-------- |
 | Nokia 8                  | NB1      |
+| Nokia 8 Repartitioned    | NLA      |
 | Nokia 8 Sirocco          | A1N      |
 | Nokia 7 Plus             | B2N      |
 | Nokia 7                  | C1N      |
