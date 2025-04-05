@@ -131,7 +131,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
-ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
+ifeq ($(filter NB1 NLA,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.qcom
 endif
 
