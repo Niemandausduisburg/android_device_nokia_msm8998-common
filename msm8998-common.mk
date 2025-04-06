@@ -77,8 +77,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
 
-# Charger
 PRODUCT_PACKAGES += \
+    charger_res_images \
+    charger_res_images_vendor \
     libsuspend
 
 # ConfigStore
