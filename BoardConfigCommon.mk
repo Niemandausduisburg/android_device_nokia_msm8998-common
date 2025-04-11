@@ -143,7 +143,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 include device/derp/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor/zygote
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private/zygote
 
 # Treble
 ifeq ($(filter NB1,$(shell echo $(TARGET_PRODUCT) | sed 's/^derp_//')),)
