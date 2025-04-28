@@ -1,0 +1,3 @@
+dontaudit clatd shell_data_file:dir search;
+dontaudit clatd shell_test_data_file:dir search;
+dontaudit clatd system_data_root_file:dir read;
